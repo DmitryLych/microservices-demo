@@ -3,6 +3,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/DmitryLych/microservices-demo/config-data
+          uri: https://github.com/DmitryLych/microservices-demo
 server:
   port: 8001
