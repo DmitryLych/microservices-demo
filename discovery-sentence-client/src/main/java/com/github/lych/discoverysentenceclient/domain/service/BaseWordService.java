@@ -26,7 +26,7 @@ public class BaseWordService implements WordService {
         final List<ServiceInstance> instances = clientService.getClients();
 
         return instances.stream()
-                .map(instance -> restTemplate.exchange(instance.getUri(), HttpMethod.GET, null,
+                .map(instance -> restTemplate.exchange("http://" + instance.getServiceId(), HttpMethod.GET, null,
                         new ParameterizedTypeReference<List<String>>() {
                         }).getBody())
                 .filter(Objects::nonNull)
