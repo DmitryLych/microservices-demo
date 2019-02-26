@@ -1,7 +1,0 @@
----
-words: fallback
-
----
-spring:
-  profiles: cold-noun
-words: icicle,refrigerator,blizzard,snowball

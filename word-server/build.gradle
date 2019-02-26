@@ -16,9 +16,8 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-actuator")
-    compile("org.springframework.boot:spring-boot-devtools")
     compile("org.springframework.cloud:spring-cloud-starter-config:$starterConfigVersion")
-    compile("org.springframework.cloud:spring-cloud-starter-eureka:$eurekaVersion")
-    compile("org.springframework.cloud:spring-cloud-starter-ribbon:$ribbonVersion")
+    compile("org.springframework.cloud:spring-cloud-dependencies:$dependenciesVersion")
+    compile("org.springframework.cloud:spring-cloud-starter-config:$starterConfigVersion")
     compileOnly("org.projectlombok:lombok")
 }
