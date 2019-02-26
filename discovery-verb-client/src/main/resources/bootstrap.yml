@@ -1,3 +1,6 @@
 spring:
   application:
     name: discovery-verb-client
+  cloud:
+    config:
+      uri: http://localhost:8001
