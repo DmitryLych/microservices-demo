@@ -19,9 +19,9 @@ spring:
 
 ---
 spring:
-  profiles: article
+  profiles: adjective
   application:
-    name: article
+    name: adjective
 
 ---
 spring:
