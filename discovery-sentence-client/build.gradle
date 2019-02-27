@@ -18,5 +18,6 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.cloud:spring-cloud-starter-netflix-ribbon:$ribbonVersion")
     compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:$eurekaClientVersion")
+    compile("org.springframework.cloud:spring-cloud-starter-config:$serverConfigVersion")
     compileOnly("org.projectlombok:lombok")
 }
