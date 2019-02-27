@@ -19,5 +19,7 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-netflix-ribbon:$ribbonVersion")
     compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:$eurekaClientVersion")
     compile("org.springframework.cloud:spring-cloud-starter-config:$serverConfigVersion")
+    compile("org.springframework.cloud:spring-cloud-starter-openfeign:$feignVersion")
+    compile("net.sf.dozer:dozer:$dozerVersion")
     compileOnly("org.projectlombok:lombok")
 }
