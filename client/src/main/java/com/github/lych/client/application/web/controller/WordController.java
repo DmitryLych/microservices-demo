@@ -7,14 +7,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
+import static java.util.stream.Collectors.toList;
+
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class WordController {
 
-    private final WordService service;
+    private final List<WordService> services;
 
     @GetMapping("/lucky-word")
-    public ResponseEntity<String> getWord() {
-        return ResponseEntity.ok(service.getWord());
+    public ResponseEntity<List<String>> getWord() {
+        return ResponseEntity.ok(services.stream().map(WordService::getWord).collect(toList()));
     }
 }
