@@ -13,6 +13,6 @@ public class BaseWordService implements WordService {
 
     @Override
     public String getWord() {
-        return config.getWord();
+        return config.getLuckyWord();
     }
 }

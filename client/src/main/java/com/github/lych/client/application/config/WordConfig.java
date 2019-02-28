@@ -11,5 +11,5 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "word-config")
 public class WordConfig {
 
-    private String word;
+    private String luckyWord;
 }
